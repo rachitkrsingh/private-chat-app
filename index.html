@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Postman Assignment">
+    <meta name="author" content="Rachit Singh">
+
+	<title>Chatting Application</title>
+
+
+	<!-- <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">  -->
+	<link rel="stylesheet" type="text/css" href="public/css/style.css"> 
+</head>
+<body>
+
+
+<div class="username-wrap" id="usernameWrap">
+	<p> Choose a username</p>
+	<p id="usernameError"></p>
+	<div class="available-users" id="availableUsers"></div>
+</div>
+
+<div class="content-wrap clearfix" id="contentWrap">
+	<div class="left-sidebar">
+		<div class="current-user" id="currentUser">
+		</div>
+		<div class="user-wrap" id="usersWrap">
+		</div>
+	</div>
+
+
+	<div  class="chat-wrap" id="chatWrap">
+		<div class="header">Please Select Someone from the left side list to chat</div>
+		<div class="chat-room" id="chat"></div>
+		<div class="send-message-container">
+			<form id="send-message">
+				<input type="text" id="message" data-user="" disabled="disabled" class="input-disable" placeholder="Click to any contact person, type your msg and press enter to send">
+			</form>
+		</div>
+	</div>
+	
+	
+	
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="/js/script.js"></script>
+
+</body>
+</html>
